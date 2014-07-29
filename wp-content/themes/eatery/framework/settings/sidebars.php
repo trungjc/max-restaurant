@@ -18,11 +18,19 @@ if ( function_exists('register_sidebar') )  {
 		'after_title' => '</h2>'
 	));
 	
+	
 	register_sidebar(array(  
 		'name' => __( 'Mobile Sidebar', 'eatery' ),
 		'before_widget' => '<div class="side-widget mobile">',  
 		'after_widget' => '</div>',  
 		'before_title' => '<h2 class="sidebar-widget-title mobile">',  
+		'after_title' => '</h2>'
+	));
+        register_sidebar(array(  
+		'name' => __( 'Last Sidebar Navigation', 'eatery' ),  
+		'before_widget' => '<div class="side-widget below last">',  
+		'after_widget' => '</div><!--br class="clear"-->',  
+		'before_title' => '<h2 class="sidebar-widget-title">',  
 		'after_title' => '</h2>'
 	));
 }

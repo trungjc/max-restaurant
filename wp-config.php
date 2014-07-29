@@ -108,7 +108,8 @@ define( 'WPE_CACHE_TYPE', 'generational' );
 
 define( 'WPE_LBMASTER_IP', '66.228.39.18' );
 define('WPLANG','');
-
+define('WP_HOME','http://localhost/max-restaurant/');
+define('WP_SITEURL','http://localhost/max-restaurant/');
 # WP Engine ID
 
 

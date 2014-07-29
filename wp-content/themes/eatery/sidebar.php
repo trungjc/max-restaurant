@@ -28,6 +28,7 @@ $site_url = home_url();
             <!-- BELOW BEGIN--><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Below Sidebar Navigation") ) : ?><?php endif; ?>	<!-- BELOW END-->
             <!-- MOBILE BEGIN--><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Mobile Sidebar") ) : ?><?php endif; ?>	<!-- MOBILE END-->
             <?php echo returnSOClinks($style_theme); // Calls Funstion to Return icons and links to social media accounts. Check out include file sidebar_socialOpt.php ?>
+            <!-- BELOW BEGIN--><?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Last Sidebar Navigation") ) : ?><?php endif; ?>	<!-- BELOW END-->
         </div></div>
     </div>
 </div>
