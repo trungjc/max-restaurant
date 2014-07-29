@@ -1,3 +1,5 @@
+/* @override http://maxsonbroad.wpengine.com/wp-content/themes/eatery/style.css */
+
 /*
 Theme Name: Eatery 
 Theme URI: http://www.themovation.com/eatery
@@ -163,6 +165,7 @@ input[type=submit] {
 	margin-left:15%;
 	width:75%;
 	padding:0 14px;
+	box-shadow: rgba(0,0,0,0.5) 2px 2px 3px;
 }
 #sidebarBorder{
 	padding:14px 0;
@@ -357,6 +360,10 @@ input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
 	display: none;
 }
+
+input.sendbtn {
+	color: #fff;
+}
 input[type=search] {
 	background: url("images/search-icon.png") no-repeat scroll 9px center #804F09;
     border: 0 none;
@@ -401,6 +408,26 @@ input[type=search]:focus {
 .topRight {top:-1px; right:-1px; background-position:-32px 0;}
 .bottomLeft {bottom:-1px; left:-1px; background-position:0 -32px;}
 .bottomRight {bottom:-1px; right:-1px; background-position:-32px -32px;}
+
+
+
+#sidebar .textwidget center {
+	font-size: 13px;
+
+	
+}
+
+#sidebar .textwidget center.reservation {
+	font-size: 20px;
+}
+
+#sidebar .textwidget center.reservation a  {
+	margin-top: .5em;
+}
+
+#sidebar center.food-items {
+	
+}
 
 /******************** Food Menu ********************/
 /***************************************************/
@@ -451,13 +478,21 @@ body.single-food .menu_item_wrapper{
 .single-menu-price {text-align:center; line-height:120%;}
 
 #sidebar #sidebarBorder{
- height: 100%;padding:0;
+ height: 100%;
+	padding: 0;
+	margin-bottom: -20px;
 }
 #sidebar #sidebarBorder > div {
  border-top: 20px solid #6B6027;
- height: 98%;padding: 0 14px;
+ height: 100%;
  border-bottom: 20px solid #6B6027;
- margin-left: -14px; margin-right: -14px;}
+	margin-right: -14px;
+	margin-left: -14px;
+	padding-top: 0;
+	padding-left: 14px;
+	padding-right: 14px;
+	margin-top: -20px;
+}
 #wrapper-container {
     height: 100%;overflow: hidden;
     background: url(images/html-bg.jpg) repeat-x left bottom;

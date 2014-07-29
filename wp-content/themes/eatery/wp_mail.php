@@ -30,6 +30,8 @@ if (isset($_POST['formampm'])) {
 }
 
 
+
+
 $formemail = $_POST['formemail'];
 if(($formemail > "") && (strtolower($formemail) !== 'email')){
 }else{
@@ -44,6 +46,7 @@ if(($formphone > "") && (strtolower($formphone) !== 'phone')){
 
 $formcomments = $_POST['formcomments'];
 
+$formnewsletter = $_POST['newsletter'];
 
 
 // Get Global Vars for Autoresponder
@@ -306,6 +309,8 @@ $msg = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w
                                                                 <h1 class="h1">'.$sub.'</h1>
 																'. __('You have received a new reservation from','eatery').' <strong>'.$formname.'</strong> '. __('for','eatery').' <strong>'.$formmonth.' '.$formday.'</strong> @ <strong>'.$formhour.'</strong>:<strong>'.$formminutes.' '.$formampm.'</strong>  (<strong>'.$formguests.'</strong> '. __('guests','eatery').'). '. __('Please email','eatery').' <strong>'.$formemail.'</strong> '. __('or call','eatery').' <strong>'.$formphone.'</strong> '. __('to confirm','eatery').'.
 																<br /><br /><strong>'. __('Comments','eatery').':</strong> '.$formcomments.'
+                                                            <br /><br />
+																Events and promotion emails? ' .$formnewsletter. '
                                                             </div>
 														</td>
                                                     </tr>

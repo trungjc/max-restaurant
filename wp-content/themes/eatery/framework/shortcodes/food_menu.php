@@ -221,7 +221,8 @@ function dislayAllPartentItems($term_id,$taxonomyName,$title = false){
 			
 			
 			if($mg_disable_details_link !== 'on'){
-				$title = "<a href='". get_permalink() ."'>". get_the_title() ."</a>";
+//				$title = "<a href='". get_permalink() ."'>". get_the_title() ."</a>";
+				$title = get_the_title();
 			}else{
 				$title = get_the_title();
 			}
@@ -415,7 +416,9 @@ function displayAllChildItem($term_id,$taxonomyName,$title = false)
 									
 									
 									if($mg_disable_details_link !== 'on'){
-										$title = "<a href='". get_permalink() ."'>". get_the_title() ."</a>";
+									//	$title = "<a href='". get_permalink() ."'>". get_the_title() ."</a>";
+										$title = get_the_title();
+
 									}else{
 										$title = get_the_title();
 									}

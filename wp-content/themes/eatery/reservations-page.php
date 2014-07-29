@@ -189,7 +189,11 @@ jQuery().ready(function() {
                    <textarea name="formcomments" id="formcomments" onfocus="if(this.value=='<?php _e('Comments / notes (optional)','eatery') ?>')this.value='';" onblur="if(this.value=='')this.value='<?php _e('Comments / notes (optional)','eatery') ?>';" class="input-text full tall"><?php _e('Comments / notes (optional)','eatery'); ?></textarea>
                   </div>
                  </div>
-                 
+                <div class="infoWrapper">
+                  <div class="infoContent">
+                   <input type="checkbox" checked="yes" name="newsletter" id="newsletter" class="input-checkbox {validate:{required:false}}" />Send Info about Events and Promotions
+                  </div>
+                 </div>    
                  <div class="infoWrapper">
                   <div class="infoTitle"></div>
                   <div class="infoContent">
