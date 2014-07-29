@@ -171,7 +171,10 @@ input[type=submit] {
 	padding:14px 0;
 }
 
-#logo {margin:0 0 20px 0; text-align:center; padding:30px 0 0 0;}
+#logo { margin: 0 0 20px -40%;
+    padding: 30px 0 0;
+    text-align: center;
+    width: 180%;}
 
 #logo a img {
 	-webkit-transition: opacity 0.1s linear;	
@@ -239,9 +242,9 @@ input[type=submit] {
 	display:block;
 	font-weight:normal;    text-transform: uppercase;
 }
-
+ /* 
 .header-image {
-    background-color: #AF7C33;
+  background-color: #AF7C33;
     height: 133px;
     left: 0;
     position: absolute;
@@ -253,7 +256,7 @@ input[type=submit] {
     background-color: #AF7C33;
     height: 133px;
     width: 100%;
-}
+}*/
 #sidebar-menu li{
 	position: relative;
 	z-index: 10;
@@ -495,7 +498,7 @@ body.single-food .menu_item_wrapper{
 }
 #wrapper-container {
     height: 100%;overflow: hidden;
-    background: url(images/html-bg.jpg) repeat-x left bottom;
+    /*background: url(images/html-bg.jpg) repeat-x left bottom;*/
 }
 
 /******************** Footer ********************/
