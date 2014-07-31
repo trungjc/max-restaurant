@@ -37,7 +37,11 @@ License URI: http://www.themovation.com/eatery/license
 
 /******************** Reset ********************/
 /***********************************************/
-
+body { background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -357,6 +361,7 @@ input[type=search] {
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
 	font-family: inherit;
+        text-transform: uppercase;
 	font-size: 100%;
 }
 input::-webkit-search-decoration,
@@ -400,10 +405,22 @@ input[type=search]:focus {
 	-webkit-box-shadow: 0px 0px 6px 2px rgba(184, 184, 184, 0.2);
 	-moz-box-shadow: 0px 0px 6px 2px rgba(184, 184, 184, 0.2);	
 	box-shadow: 0px 0px 6px 2px rgba(184, 184, 184, 0.2);
-	position:relative;
+	position:relative;background-color: rgba(225, 225, 225, 0.6) !important;
 	
 }
-
+.home h1.page-title {
+    font-size: 45px;
+    margin: 0 0 22px;
+}
+.home hr.headings {display: none;}
+.home #inner-content .clearboth {height: 20px;}
+.home  .one_third > img {
+    margin-top: 44px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+}
+.two_third.last a {
+    color:#845d23;text-decoration: none;
+}
 .corner {position:absolute; width:32px; height:32px;}
 .corner {background-image:url(images/pageCorners.png);}
 
@@ -415,8 +432,8 @@ input[type=search]:focus {
 
 
 #sidebar .textwidget center {
-	font-size: 13px;
-
+	font-size: 18px;
+        line-height: 24px;
 	
 }
 
@@ -482,19 +499,32 @@ body.single-food .menu_item_wrapper{
 
 #sidebar #sidebarBorder{
  height: 100%;
-	padding: 0;
-	margin-bottom: -20px;
+	padding: 0;   
+ 
 }
 #sidebar #sidebarBorder > div {
- border-top: 20px solid #6B6027;
+ border-top: 20px solid #63928c;
  height: 100%;
- border-bottom: 20px solid #6B6027;
 	margin-right: -14px;
 	margin-left: -14px;
 	padding-top: 0;
 	padding-left: 14px;
 	padding-right: 14px;
-	margin-top: -20px;
+    position:relative;
+}
+#sidebar #sidebarBorder > div:after {
+      background: none repeat scroll 0 0 #63928c;
+    bottom: 20px;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: auto;
+    width: 100%;
+}
+#sidebar .soc ,#sidebar .soc + .textCenter > div{
+    border: medium none !important;
 }
 #wrapper-container {
     height: 100%;overflow: hidden;
@@ -616,7 +646,7 @@ h6 {
 
 h1.page-title, h1.post-title {
 	text-align:center;
-	margin:0 0 12px 0;
+	margin:0 0 12px 0;   font-weight: 600;
 }
 
 p.wp-caption-text {line-height:120%;}
@@ -1678,8 +1708,36 @@ margin:0 !important;
 h2.OT_subtitle {
 font-size:8px !important;
 }
+.textCenter {
+    margin: 20px 0;
+    text-align: center;
+}
 
 #sidebar .side-widget ul#OT_timeList, #sidebar .side-widget ul#OT_partyList {display:none; text-align:left;}
 
 #sidebar .side-widget ul#OT_timeList li, #sidebar .side-widget ul#OT_partyList li {display:inline; line-height:110% !important; padding:0 !important; margin:0 !important;}
 
+@media (max-width: 767px){
+    #sidebar #sidebarBorder > div:after {
+        display: none;
+    }
+    #sidebar #sidebarBorder > div {border: none}
+    #logo {
+        width: 100%;
+    }
+}
+@media (max-width: 320px){
+    .one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+        float: none;
+        margin: 10px 0;
+        padding: 0;
+        width: 100%;
+      
+        }
+        .home .inner-content  {
+           text-align: center;   
+        }
+    .home .one_third > img {
+        margin-top: 14px;
+    }
+}

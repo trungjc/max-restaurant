@@ -127,9 +127,9 @@ License URI: http://www.themovation.com/eatery/license
 		margin:0;
 		display:block;
     	visibility:visible;
-		border-top-width: 1px;
+		border-top-width: 3px;
 		border-top-style: solid;
-		/*border-top-color: #8d4413;*/
+		border-top-color: #c17824!important
 }
 	
 	#footer{
